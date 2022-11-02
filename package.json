@@ -1,0 +1,27 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "https://www.theodinproject.com/lessons/node-path-javascript-testing-practice",
+  "main": "capitalize.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendonn40/TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brendonn40/TDD/issues"
+  },
+  "homepage": "https://github.com/brendonn40/TDD#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  },
+  "dependencies": {
+    "@types/jest": "^29.2.1"
+  }
+}
