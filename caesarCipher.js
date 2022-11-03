@@ -1,6 +1,3 @@
-let s = "abcdefghijklmnopqrstuvwxyz";
-let lower = createAlphabet(s);
-let upper = createAlphabet(s.toUpperCase);
 function caesarCipher(string, key) {
   let result = [];
   for (let i = 0; i < string.length; i++) {
@@ -17,20 +14,3 @@ function caesarCipher(string, key) {
   }
   return result.join("");
 }
-
-function createAlphabet(alpha) {
-  let arr = [];
-  for (let i = 0; i < alpha.length; i++) {
-    let obj = {};
-    obj[i] = alpha[i];
-    arr.push(obj);
-  }
-  return arr;
-}
-function isCharacterALetter(char) {
-  return /[a-zA-Z]/.test(char);
-}
-function isLowerCase(str) {
-  return str == str.toLowerCase() && str != str.toUpperCase();
-}
-module.exports = caesarCipher;
